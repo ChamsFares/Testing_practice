@@ -6,7 +6,7 @@ export function caesarCipher(string, shift) {
     const index = alphabet.indexOf(char.toLowerCase());
     if (index === -1) return char;
     
-    let newIndex = (index + shift) % 26;
+      let newIndex = (index + shift) % 26;
     if (newIndex < 0) newIndex += 26;
     
     const shiftedChar = alphabet[newIndex];
